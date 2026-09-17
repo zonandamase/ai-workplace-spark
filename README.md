@@ -1,102 +1,107 @@
-# AI Workplace Spark
+# AI Workplace Productivity Assistant
 
-Build a clean, modern, responsive SaaS-style web application called AI Workplace Productivity Assistant for professionals.
+## Project Overview
 
-Core Requirement
+**AI Workplace Productivity Assistant** is a modern, responsive web application designed to help professionals automate common workplace tasks using AI. The application provides dynamically generated AI responses based on user input rather than generic or hardcoded content.
 
-All generated responses must come from AI dynamically based on the user's input. Do not use hardcoded, generic, placeholder, or pre-written responses. Each feature must process the user's specific input and generate a relevant response using an AI model/API.
+The application focuses on improving workplace productivity through AI-powered email generation, research assistance, and task planning.
 
-Features
+## Features Implemented
 
-1. Smart Email Generator
+### 1. Smart Email Generator
 
-User enters the purpose, recipient/context, and key points.
+* Generates professional emails using AI.
+* Supports **Formal, Friendly, and Persuasive** tones.
+* Generates responses based on the user's specific instructions and context.
+* AI-generated emails can be edited and copied.
 
-AI generates a complete professional email based on the user's input.
+### 2. AI Research Assistant
 
-Tone options: Formal, Friendly, Persuasive.
+* Accepts research topics, pasted article content, and website/article URLs.
+* Generates AI-powered:
 
-Generated email must be editable and copyable.
+  * Summaries
+  * Key insights
+  * Practical recommendations
+* Outputs are editable and copyable.
+* Responses are generated dynamically from the user's input.
 
-2. AI Research Assistant
+### 3. AI Task Planner
 
-User can enter a research topic, paste text/article content, or provide a URL.
+* Accepts tasks, deadlines, priorities, and available time.
+* Generates personalised daily or weekly schedules using AI.
+* Prioritises tasks based on urgency, importance, and deadlines.
+* Generated schedules can be edited.
 
-AI analyses the provided input and generates:
+### 4. User Interface
 
-Summary
+* Modern SaaS-style dashboard.
+* Responsive design for desktop, tablet, and mobile.
+* Sidebar navigation.
+* Clean professional cards, forms, buttons, and typography.
+* Raspberry/pink-purple, light blue, and medium blue colour palette.
+* Subtle gradient effects.
 
-Key insights
+### 5. Responsible AI
 
-Practical recommendations
+* Includes a Responsible AI disclaimer.
+* Encourages users to review and verify AI-generated information before using it for professional communication, research, or decision-making.
 
-Responses must be specific to the user's input and not generic.
+## Technologies and Tools Used
 
-Results must be editable and copyable.
+* **Lovable** – Application development and UI generation
+* **React** – Frontend application framework
+* **TypeScript** – Programming language
+* **Tailwind CSS** – Styling and responsive design
+* **AI API/LLM Integration** – Dynamic AI-generated responses
+* **GitHub** – Version control and project repository
 
-3. AI Task Planner
+> The application is frontend-focused and does not use a custom backend, database, authentication system, or persistent data storage.
 
-User enters their tasks, deadlines, priorities, and available time.
+## Setup Instructions
 
-AI generates a personalised daily or weekly schedule based on the information provided.
+### 1. Clone or Download the Project
 
-AI should prioritise tasks according to urgency, importance, deadlines, and available time.
+Clone the project repository or download the project files.
 
-Generated schedule must be editable.
+### 2. Install Dependencies
 
-Dashboard & Design
+Open the project folder in a terminal and install the required dependencies:
 
-Modern professional dashboard with sidebar navigation.
+```bash
+npm install
+```
 
-Responsive desktop, tablet, and mobile design.
+### 3. Configure AI Integration
 
-Clean SaaS-style interface.
+Configure the required AI API integration according to the project's environment configuration.
 
-Colour palette: raspberry/pink-purple luxury accent + light blue + medium blue, with subtle gradients.
+Do not expose private API keys in client-side code or commit secret keys to GitHub.
 
-Use professional cards, forms, buttons, icons, and clear typography.
+### 4. Run the Application
 
-Dashboard sections: Home, Email Generator, Research Assistant, Task Planner.
+Start the development server:
 
-Technical Constraints
-
-Frontend-only application.
-
-No custom backend, database, authentication, or persistent data storage.
-
-Do not save user inputs or AI outputs.
-
-Use an appropriate AI API/integration to generate responses dynamically.
-
-Keep API keys secure and do not expose secret keys in client-side code.
-
-Avoid unnecessary features or complexity.
-
-Responsible AI
-
-Include a visible disclaimer:
-
-“AI-generated content may contain errors or omissions. Always review, verify, and edit AI outputs before using them for professional communication, research, or decision-making.”
-
-The final application should feel like a real AI productivity tool, not a static demo. Every AI response must be dynamically generated from the user's specific input.
-
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/188274e1-c54a-4bbf-a979-5e2f49498f30).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
-
-## Development
-
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
+```bash
 npm run dev
 ```
+
+Open the local development URL provided by the application.
+
+### 5. Build for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+## Data and Privacy
+
+The application does not intentionally store user inputs or AI-generated outputs in a database. Users should avoid entering confidential, sensitive, or personally identifiable information into the application.
+
+## Author
+
+**Zona Ndamase**
+
+AI, educational technology, public administration, and digital transformation researcher.
